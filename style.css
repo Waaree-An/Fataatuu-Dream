@@ -122,3 +122,21 @@ nav a:hover {
 .post a:hover {
   text-decoration: underline;
 }
+.site-footer {
+  background-color: #1e1e2f;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.95em;
+  margin-top: 40px;
+}
+
+.site-footer a {
+  color: #66ccff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
