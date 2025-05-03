@@ -45,7 +45,7 @@ nav a:hover {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
   z-index: -1;
 }
 
@@ -76,4 +76,49 @@ nav a:hover {
   color: #3a3a5a;
   transform: scale(1.1);
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+.latest-posts {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.latest-posts h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #1e1e2f;
+}
+
+.post {
+  margin-bottom: 25px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  background-color: #fff;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.post h3 {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.post p {
+  font-size: 1em;
+  color: #555;
+}
+
+.post a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.post a:hover {
+  text-decoration: underline;
 }
