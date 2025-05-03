@@ -18,6 +18,24 @@
   <main>
     <p>This is a blog for unity-intensive, dream-driving students.</p>
   </main>
+  <script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  ScrollReveal().reveal('.hero', {
+    delay: 200,
+    duration: 1000,
+    origin: 'top',
+    distance: '50px',
+    reset: false
+  });
+
+  ScrollReveal().reveal('.about, .contact', {
+    delay: 400,
+    duration: 1000,
+    origin: 'bottom',
+    distance: '60px',
+    reset: false
+  });
+</script>
 </body>
 </html>
 <section class="hero">
