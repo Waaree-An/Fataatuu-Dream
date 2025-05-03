@@ -1,33 +1,28 @@
-body {
-    font-family: sans-serif;
-    padding: 20px;
-    background: #f4f4f4;
+/* Fancy Nav Bar Style */
+nav {
+  background-color: #1e1e2f;
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin: 10px auto;
+  max-width: 90%;
 }
-header {
-    background: #444;
-    color: #fff;
-    padding: 10px 20px;
-}
+
 nav a {
-    margin-right: 15px;
-    color: #fff;
-    text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  background-color: #3a3a5a;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
-form {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-}
-input, textarea {
-    display: block;
-    margin-bottom: 10px;
-    width: 100%;
-    padding: 10px;
-}
-button {
-    background-color: #444;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
+
+nav a:hover {
+  background-color: #ffcc00;
+  color: #1e1e2f;
+  transform: scale(1.05);
 }
