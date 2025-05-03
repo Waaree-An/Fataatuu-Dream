@@ -27,14 +27,26 @@ nav a:hover {
   transform: scale(1.05);
 }
 .hero {
-  background: linear-gradient(to right, #1e1e2f, #3a3a5a);
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1522199710521-72d69614c702') center/cover no-repeat;
   color: white;
   text-align: center;
-  padding: 60px 20px;
+  padding: 100px 20px;
   border-radius: 20px;
   margin: 20px auto;
   max-width: 90%;
   box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  z-index: 1;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+  z-index: -1;
 }
 
 .hero h2 {
@@ -46,6 +58,7 @@ nav a:hover {
   font-size: 1.2em;
   color: #ffcc00;
 }
+
 .hero-btn {
   display: inline-block;
   margin-top: 20px;
