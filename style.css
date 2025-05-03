@@ -1,0 +1,33 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    background: #f4f4f4;
+}
+header {
+    background: #444;
+    color: #fff;
+    padding: 10px 20px;
+}
+nav a {
+    margin-right: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+input, textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+}
+button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
