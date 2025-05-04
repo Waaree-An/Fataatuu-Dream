@@ -204,3 +204,25 @@ nav ul li a:hover {
   color: #2563eb; /* Or any highlight color you like */
   text-decoration: underline;
 }
+.latest-posts .post h3 {
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.latest-posts .post a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.latest-posts .post a:hover {
+  color: #1e40af;
+  text-decoration: underline;
+}
+.post a:hover {
+  background-color: #1e3a8a;
+  transition: background-color 0.3s ease;
+}
