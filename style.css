@@ -196,3 +196,11 @@ html {
 .read-more:hover {
   background-color: #444;
 }
+nav ul li a {
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #2563eb; /* Or any highlight color you like */
+  text-decoration: underline;
+}
