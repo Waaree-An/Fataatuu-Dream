@@ -78,5 +78,17 @@
   <p>&copy; 2025 Fataatuu Dream. Made with unity by dream-driven students.</p>
   <p><a href="mailto:anawaarabdujabbaar@gmail.com">Contact us</a></p>
 </footer>
+<!-- Back to Top Button -->
+<button id="backToTop" title="Go to top">↑ Top</button>
+
+<script>
+  const btn = document.getElementById("backToTop");
+  window.onscroll = function () {
+    btn.style.display = window.scrollY > 300 ? "block" : "none";
+  };
+  btn.onclick = function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+</script>
 </body>
 </html>
