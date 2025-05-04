@@ -64,5 +64,19 @@
       <p>Hello world! I’m so excited to start this blog. I made this site to share my journey as a unity-driven, dream-following student. This is just the beginning!</p>
     </article>
   </main>
+  <section class="comments" style="max-width: 800px; margin: 4rem auto; padding: 2rem; background-color: #f0f4f8; border-radius: 12px;">
+  <h2 style="color: #1e3a8a;">Leave a Comment</h2>
+  <form action="https://formspree.io/f/xjkwypyp" method="POST" style="display: flex; flex-direction: column; gap: 1rem;">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" required style="padding: 10px; border-radius: 6px; border: 1px solid #ccc;">
+
+    <label for="comment">Your Comment</label>
+    <textarea id="comment" name="message" rows="4" required style="padding: 10px; border-radius: 6px; border: 1px solid #ccc;"></textarea>
+
+    <button type="submit" style="padding: 10px; background-color: #2563eb; color: white; border: none; border-radius: 6px; font-weight: bold;">
+      Submit Comment
+    </button>
+  </form>
+</section>
 </body>
 </html>
