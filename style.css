@@ -160,3 +160,6 @@ nav a:hover {
 #backToTop:hover {
   background-color: #444;
 }
+html {
+  scroll-behavior: smooth;
+}
