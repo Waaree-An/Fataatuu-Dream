@@ -67,16 +67,24 @@
   </p>
 </div>
 </section>
-  <section class="contact" id="contact">
-    <h2>Contact Us</h2>
-    <form action="https://formspree.io/f/xjkwypyp" method="post">
-      <label for="email">Your Email</label>
-      <input name="Email" id="email" type="email" required>
-      <label for="message">Message</label>
-      <textarea name="Message" id="message" required></textarea>
-      <button type="submit">Submit</button>
-    </form>
+<main>
+  <section class="contact-container">
+    <div class="contact-box">
+      <h2>Let's Connect</h2>
+      <p>We believe in building dreams together. Got a question, feedback, or a brilliant idea? Send us a message!</p>
+      <form id="contactForm" action="https://formspree.io/f/xjkwypyp" method="POST" onsubmit="showThankYouMessage(event)">
+        <input type="text" name="Name" placeholder="Your Full Name" required>
+        <input type="email" name="Email" placeholder="Your Email Address" required>
+        <textarea name="Message" rows="5" placeholder="Your Message..." required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div id="thankYouMessage" style="display: none; text-align: center; margin-top: 20px; color: #1e3a8a;">
+        <h3>Thank You for Reaching Out!</h3>
+        <p>Your message has been received. We will get back to you soon.</p>
+      </div>
+    </div>
   </section>
+</main>
 
   <footer>
     <p>© 2025 Fataatuu Dream. All rights reserved.</p>
