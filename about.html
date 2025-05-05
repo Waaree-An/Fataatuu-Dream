@@ -6,6 +6,20 @@
   <title>About - Fataatuu Dream</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+<header class="site-header" style="background-color: #1e3a8a; padding: 1rem; color: white;">
+  <div style="max-width: 1000px; margin: auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+    <h1 style="font-size: 1.5rem;">Fataatuu Dream</h1>
+    <nav>
+      <button id="menuToggle" style="background: none; border: 2px solid white; padding: 0.5rem 1rem; color: white; border-radius: 6px; display: none;">Menu</button>
+      <ul id="navLinks" style="list-style: none; display: flex; gap: 1rem; flex-wrap: wrap; padding-left: 0; margin: 0;">
+        <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+        <li><a href="about.html" style="color: white; text-decoration: none;">About</a></li>
+        <li><a href="blog.html" style="color: white; text-decoration: none;">Blog</a></li>
+        <li><a href="contact.html" style="color: white; text-decoration: none;">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 <body>
   <header>
     <h1>About Us</h1>
@@ -30,6 +44,27 @@
   toggleBtn.addEventListener('click', () => {
     nav.classList.toggle('active');
   });
+</script>
+<script>
+  const toggle = document.getElementById("menuToggle");
+  const navLinks = document.getElementById("navLinks");
+
+  function handleResize() {
+    if (window.innerWidth < 700) {
+      toggle.style.display = "inline-block";
+      navLinks.style.display = "none";
+    } else {
+      toggle.style.display = "none";
+      navLinks.style.display = "flex";
+    }
+  }
+
+  toggle.onclick = () => {
+    navLinks.style.display = navLinks.style.display === "flex" ? "none" : "flex";
+  };
+
+  window.addEventListener("resize", handleResize);
+  window.addEventListener("load", handleResize);
 </script>
 </body>
 </html>
