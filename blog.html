@@ -67,15 +67,16 @@
 
   <p style="margin-top: 2rem; font-weight: bold; color: #1e40af;">— Anwar</p>
 </section>
-  <header>
-    <h1>My Blog</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+ <header class="navbar">
+  <h1 class="logo">My Blog</h1>
+  <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
   <main>
     <article>
       <h2>Welcome to My First Blog Post</h2>
@@ -97,5 +98,13 @@
     </button>
   </form>
 </section>
+<script>
+  const toggleBtn = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.nav-links');
+
+  toggleBtn.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
 </body>
 </html>

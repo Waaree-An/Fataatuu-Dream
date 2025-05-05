@@ -262,3 +262,51 @@ nav ul li a:hover {
     font-size: 1.2rem;
   }
 }
+/* Base styles */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e3a8a;
+  color: white;
+  padding: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1e3a8a;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .nav-links a {
+    margin: 1rem 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
