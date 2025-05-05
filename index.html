@@ -7,17 +7,16 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <h1>Fataatuu Dream</h1>
-<ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="#about">About</a></li>
-  <li><a href="#contact">Contact</a></li>
-</ul>
-    </nav>
-  </header>
-
+<header class="navbar">
+  <h1 class="logo">My Blog</h1>
+  <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
   <section class="hero">
     <h2>Fataatuu Dream</h2>
     <p>Where Unity and Dreams Meet</p>
@@ -121,5 +120,13 @@
   <p>&copy; 2025 Fataatuu Dream | Built by <strong>Anwar Abduljabbaar</strong> — Dream-Driven Founder</p>
   <p><a href="#home" style="color: #60a5fa;">Back to top</a></p>
 </footer>
+<script>
+  const toggleBtn = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.nav-links');
+
+  toggleBtn.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
 </body>
 </html>
