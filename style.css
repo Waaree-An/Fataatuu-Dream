@@ -226,3 +226,39 @@ nav ul li a:hover {
   background-color: #1e3a8a;
   transition: background-color 0.3s ease;
 }
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .latest-posts .post,
+  .featured-post {
+    width: 100%;
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .about,
+  .contact {
+    padding: 2rem 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+}
