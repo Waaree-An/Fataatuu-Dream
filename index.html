@@ -136,5 +136,27 @@
     nav.classList.toggle('active');
   });
 </script>
+<script>
+  function showThankYouMessage(event) {
+    event.preventDefault();
+
+    document.getElementById('contactForm').style.display = 'none';
+    document.getElementById('thankYouMessage').style.display = 'block';
+
+    var form = event.target;
+    var formData = new FormData(form);
+
+    fetch(form.action, {
+      method: 'POST',
+      body: formData
+    }).then(response => {
+      if (!response.ok) {
+        alert("There was a problem. Try again!");
+      }
+    }).catch(error => {
+      console.error('Error:', error);
+    });
+  }
+</script>
 </body>
 </html>
