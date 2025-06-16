@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="Want to join the movement or get in touch? Contact the Fataatuu team today." />
+  <meta name="keywords" content="Fataatuu contact, join us, student unity, message" />
+  <meta name="author" content="Fataatuu Team" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact Us - Fataatuu" />
+  <meta property="og:description" content="Reach out to the team behind Fataatuu and take part in our unity movement." />
+  <meta property="og:image" content="images/cover.jpg" />
+  <meta property="og:url" content="https://yourdomain.com/contact.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact Us - Fataatuu" />
+  <meta name="twitter:description" content="Reach out and be part of our unity mission." />
+  <meta name="twitter:image" content="images/cover.jpg" />
+
+  <title>Contact Us - Fataatuu</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<header class="site-header" style="background-color: #1e3a8a; padding: 1rem; color: white;">
+  <div style="max-width: 1000px; margin: auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+    <h1 style="font-size: 1.5rem;">Fataatuu Dream</h1>
+    <nav>
+      <button id="menuToggle" style="background: none; border: 2px solid white; padding: 0.5rem 1rem; color: white; border-radius: 6px; display: none;">Menu</button>
+      <ul id="navLinks" style="list-style: none; display: flex; gap: 1rem; flex-wrap: wrap; padding-left: 0; margin: 0;">
+        <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+        <li><a href="about.html" style="color: white; text-decoration: none;">About</a></li>
+        <li><a href="blog.html" style="color: white; text-decoration: none;">Blog</a></li>
+        <li><a href="contact.html" style="color: white; text-decoration: none;">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  
+</header>
+
+
+<body>
+<main>
+    <body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8fafc; margin: 0;">
+  <header style="background-color: #1e3a8a; color: white; padding: 1.5rem; text-align: center;">
+    <h1 style="margin: 0;">Contact Us</h1>
+  </header>
+
+  <section style="padding: 3rem 1rem; display: flex; justify-content: center; align-items: center;">
+    <form action="https://formspree.io/f/xjkwypyp" method="post"
+      style="background: white; padding: 2rem 2.5rem; border-radius: 12px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); width: 100%; max-width: 500px;">
+      
+      <h2 style="text-align: center; color: #1e40af; margin-bottom: 1rem;">Send Us a Message</h2>
+
+      <label for="email" style="display: block; margin-top: 1rem; font-weight: bold;">Your Email</label>
+      <input name="Email" id="email" type="email" required
+        style="width: 100%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 8px; margin-top: 0.25rem;" />
+
+      <label for="message" style="display: block; margin-top: 1rem; font-weight: bold;">Your Message</label>
+      <textarea name="Message" id="message" rows="5" required
+        style="width: 100%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 8px; margin-top: 0.25rem;"></textarea>
+
+      <button type="submit"
+        style="margin-top: 1.5rem; width: 100%; padding: 0.75rem; background-color: #2563eb; color: white; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;">
+        Submit
+      </button>
+    </form>
+  </section>
+</body>
+  <section class="contact-container">
+    <div class="contact-box">
+      <h2>Let's Connect</h2>
+      <p>We believe in building dreams together. Got a question, feedback, or a brilliant idea? Send us a message!</p>
+      <form id="contactForm" action="https://formspree.io/f/xjkwypyp" method="POST" onsubmit="showThankYouMessage(event)">
+        <input type="text" name="Name" placeholder="Your Full Name" required>
+        <input type="email" name="Email" placeholder="Your Email Address" required>
+        <textarea name="Message" rows="5" placeholder="Your Message..." required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div id="thankYouMessage" style="display: none; text-align: center; margin-top: 20px; color: #1e3a8a;">
+        <h3>Thank You for Reaching Out!</h3>
+        <p>Your message has been received. We will get back to you soon.</p>
+      </div>
+    </div>
+  </section>
+  
+</main>
+  <script>
+  const toggleBtn = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.nav-links');
+
+  toggleBtn.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+<script>
+  const toggle = document.getElementById("menuToggle");
+  const navLinks = document.getElementById("navLinks");
+
+  function handleResize() {
+    if (window.innerWidth < 700) {
+      toggle.style.display = "inline-block";
+      navLinks.style.display = "none";
+    } else {
+      toggle.style.display = "none";
+      navLinks.style.display = "flex";
+    }
+  }
+
+  toggle.onclick = () => {
+    navLinks.style.display = navLinks.style.display === "flex" ? "none" : "flex";
+  };
+
+  window.addEventListener("resize", handleResize);
+  window.addEventListener("load", handleResize);
+  <script>
+  function showThankYouMessage(event) {
+    event.preventDefault(); // Prevent form submission from reloading the page
+
+    // Hide the form
+    document.getElementById('contactForm').style.display = 'none';
+
+    // Show the Thank You message
+    document.getElementById('thankYouMessage').style.display = 'block';
+
+    // Submit the form via AJAX (we'll send the data without reloading)
+    var form = event.target;
+    var formData = new FormData(form);
+    
+    fetch(form.action, {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => {
+      if (response.ok) {
+        console.log('Message Sent Successfully');
+      } else {
+        console.error('Form submission failed');
+      }
+    })
+    .catch(error => {
+      console.error('Error: ', error);
+    });
+  }
+</script>
+</script>
+</body>
+</html>
